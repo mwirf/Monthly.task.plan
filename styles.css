@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #0975a0;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Main div container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.month {
+  margin-bottom: 20px;
+}
+
+/* Heading text color */
+.month h2 {
+  color: #264653;
+}
+
+/* Center tasks on page */
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task input {
+  margin-right: 10px;
+}
+
+/* Stylize progress bar when empty */
+.progress-bar {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+/* Stylize progress bar when filling or filled */
+.progress-bar-fill {
+  height: 100%;
+  background-color: #e9c46a;
+  width: 0%;
+  text-align: center;
+  text-indent: 0.5rem;
+  line-height: 20px;
+  color: #264653;
+  font-weight: bold;
+  transition: width 0.4s ease;
+}
+
+/* Motivational message styles */
+.motivation {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+.motivation.zero {
+  background: #f5adad;
+  color: #a60404;
+}
+.motivation.low {
+  background: #ffe8a1;
+  color: #7a4a00;
+}
+.motivation.medium {
+  background: #aee7f5;
+  color: #055160;
+}
+.motivation.med_high {
+  background: #c1b4ed;
+  color: #2a00c3;
+}
+.motivation.high {
+  background: #b8efc4;
+  color: #0b3b19;
+}
+.motivation.complete {
+  background: #d6fbff;
+  color: #08475a;
+}
+
+/* Add task input */
+.add-task {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.add-task input {
+  flex: 1 1 60%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.add-task select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Add take button */
+.add-task button {
+  padding: 8px 12px;
+  background-color: #264653;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.add-task button:hover {
+  opacity: 0.95;
+}
+
+/* Delete task button */
+.delete-task-btn {
+  margin-left: 12px;
+  padding: 4px 8px;
+  background: #6d0303;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.delete-task-btn:hover {
+  opacity: 0.8;
+}

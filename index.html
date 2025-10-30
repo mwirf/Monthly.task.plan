@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Monthly Progress Roadmap Checklist</title>
+  </head>
+  <body>
+    <header>
+      <h1>Monthly Progress Tracker</h1>
+    </header>
+
+    <!-- Create progress bar div -->
+    <div class="container">
+      <h1 id="motivation_msg"></h1>
+      <div class="progress-bar">
+        <div id="progress-bar-fill" class="progress-bar-fill">0%</div>
+      </div>
+
+      <!-- Add-task UI with month dropdown -->
+      <div class="add-task">
+        <select id="month-select" aria-label="Select month"></select>
+        <input id="new-task-input" type="text" placeholder="Add a task" />
+        <button id="add-task-btn">Add</button>
+      </div>
+
+      <div id="roadmap">
+        <!-- Months will be dynamically inserted here -->
+      </div>
+    </div>
+    <!-- import script for checkboxes -->
+    <script src="app.js"></script>
+  </body>
+</html>

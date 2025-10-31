@@ -202,7 +202,7 @@ function setMotivation(progress) {
     text = "Way to take your first step! You are off to a great start. Keep it going!";
     cls += " low";
   } else {
-    text = "Add your first task to get started on your journey!";
+    text = "Let's get started with your journey!";
     cls += " zero";
   }
 
